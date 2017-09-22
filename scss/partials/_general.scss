@@ -1,0 +1,73 @@
+//GENERAL STYLES
+
+*{
+	box-sizing: border-box;
+}
+
+h1{
+	font-family: $font-logo;
+	font-size: 55px;
+}
+
+h2{
+	font-family: $font-logo;
+	color: $color-primary;
+	font-size: 35px;
+}
+
+h3{
+	font-size: 25px;
+	font-family: $font-logo;
+	letter-spacing: 1px;
+}
+
+h4{
+	font-size: 18px;
+	font-family: $font-logo;
+}
+
+h5{
+	font-size: 12px;
+	font-family: $font-body;
+}
+
+p{
+	font-size: 16px;
+	font-family: $font-body;
+}
+
+a{
+	font-size: 15px;
+	text-decoration: none;
+	font-family: $font-body;
+	color: $white;
+
+	&:hover{
+		text-decoration: underline;
+	}
+}
+
+hr{
+	border: 0;
+    height: 1px;
+    background: $white;
+    width: 80%;
+}
+
+button{
+	border: none;
+
+	&:hover{
+		cursor: pointer;
+	}
+	&:focus{
+		outline: none;
+	}
+
+	a{
+		text-decoration: none;
+		color: $white;
+		font-size: 20px;
+	}
+
+}

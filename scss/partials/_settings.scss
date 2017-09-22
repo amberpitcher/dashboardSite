@@ -1,0 +1,187 @@
+//SETTINGS STYLES
+
+.hidden{
+	display: none;
+}
+
+main{
+	#settings{
+			width: 80%;
+			position: absolute;
+			top: 16%;
+			padding: 25px;
+			margin: 0;
+			margin-left: 10%;
+			background-color: rgba(255,255,255,0.5);
+
+			a{
+				color: $color-primary;
+			}
+
+			h3{
+				color: $white;
+			}
+
+			p{
+				color: $color-primary;
+			}
+
+
+				input[type="button"]{
+					font-family: $font-body;
+					font-size: 14px;
+					margin:0 auto;
+					margin-bottom: 10px;
+					margin-top: 25px;
+					padding: 10px; 
+					background-color: $color-primary;
+					color: $white;
+					border: none;
+
+					&:focus{
+						outline: none;
+					}
+
+					&:hover{
+						background-color: $color-secondary;
+					}
+				}
+
+			.general{
+				background-color: $color-tertiary;
+				padding: 15px;
+				padding-top: 25px;
+				margin-top: 10px;
+
+
+				.icon{
+					padding: 50px 0 25px 0;
+					border-bottom: 1px solid $white;
+
+					input{
+						visibility: hidden;
+
+						&:checked + img {
+							border:2px solid $accent;
+							border-radius: 100%;
+						}
+					}
+
+					
+
+					img{
+						width: 100px;
+						margin-top: 15px;
+
+						&:hover{
+							cursor:pointer;
+						}
+					}
+				}
+
+				.username{
+					padding: 25px 0;
+					border-bottom: 1px solid $white;
+
+					input{
+						font-family: $font-logo;
+						color: $color-primary;
+						margin-top: 10px;
+						padding: 5px; 
+						border: none;
+						width: 300px;
+
+						&:focus{
+							outline: none;
+						}
+					}
+				}
+
+				.theme{
+					padding: 25px 0;
+					border-bottom: 1px solid $white;
+
+					img{
+						width: 100px;
+						margin-top: 15px;
+
+						&:hover{
+							cursor:pointer;
+						}
+					}
+
+					input{
+						visibility: hidden;
+					
+						&:checked + img {
+							border: 2px solid $accent;
+							border-radius: 100%;
+						}
+					}
+				}
+
+				input[type="button"]{
+						margin-left: 42%;
+					}
+			}
+
+			.courses{
+				background-color: $color-tertiary;
+				padding: 15px;
+				padding-top: 25px;
+				padding-bottom: 25px;
+				margin-top: 25px;
+
+				#swap-course{
+					padding: 50px 0 25px 0;
+					border-bottom: 1px solid $white;
+
+					label{
+
+						h4{
+							color: $color-primary;
+						}
+
+						img{
+							width: 100px;
+							margin-top: 35px;
+
+							&:hover{
+								cursor:pointer;
+							}
+						}
+
+						input{
+							visibility: hidden;
+						
+							&:checked + img {
+								border: 2px solid $accent;
+								border-radius: 100%;
+							}
+						}
+					}
+
+					input[type="button"]{
+						margin-top: 50px;
+						margin-bottom: 0;
+					}
+				}
+
+				.add-course{
+					padding: 25px 0 25px 0;
+					border-bottom: 1px solid $white;
+
+					select{
+						font-family: $font-body;
+						font-size: 14px;
+						margin:15px 0;
+						width: 300px;
+						height: 35px;
+						background-color: $white;
+						color: $color-primary;
+						border: none;
+					}
+				}
+			}
+	}
+}
