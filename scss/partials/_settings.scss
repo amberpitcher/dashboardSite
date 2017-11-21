@@ -132,40 +132,51 @@ main{
 				padding-bottom: 25px;
 				margin-top: 25px;
 
-				#swap-course{
-					padding: 50px 0 25px 0;
+				.swap-course{
 					border-bottom: 1px solid $white;
 
-					label{
+					#swap-course{
+						padding: 25px 0 25px 0;
+						display: flex;
+						flex-direction: row;
+						justify-content: flex-start;
 
-						h4{
-							color: $color-primary;
-						}
+						label{
+							display: flex;
+							flex-direction: column;
+							align-items: center;
+							margin-right: 25px;
 
-						img{
-							width: 100px;
-							margin-top: 35px;
+							h4{
+								color: $color-primary;
+								margin-top: 15px;
+							}
 
-							&:hover{
-								cursor:pointer;
+							img{
+								width: 100px;
+								margin-top: 25px;
+
+								&:hover{
+									cursor:pointer;
+								}
+							}
+
+							input{
+								visibility: hidden;
+							
+								&:checked + img {
+									border: 2px solid $accent;
+									border-radius: 100%;
+								}
 							}
 						}
 
-						input{
-							visibility: hidden;
-						
-							&:checked + img {
-								border: 2px solid $accent;
-								border-radius: 100%;
-							}
+						input[type="button"]{
+							margin-top: 50px;
+							margin-bottom: 0;
 						}
 					}
-
-					input[type="button"]{
-						margin-top: 50px;
-						margin-bottom: 0;
-					}
-				}
+				}	
 
 				.add-course{
 					padding: 25px 0 25px 0;
